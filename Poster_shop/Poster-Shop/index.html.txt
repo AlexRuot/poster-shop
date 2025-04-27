@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Poster Shop</h1>
+    <nav>
+      <a href="#shop">Shop Posters</a>
+      <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section id="shop">
+    <h2>Posters for Sale</h2>
+    <div class="products">
+      <!-- Example Poster -->
+      <div class="product">
+        <img src="poster1.jpg" alt="Poster 1">
+        <h3>Sunset Vibes</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Sunset Vibes', 15)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="poster2.jpg" alt="Poster 2">
+        <h3>Mountain Dreams</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Mountain Dreams', 20)">Add to Cart</button>
+      </div>
+      <!-- Add more posters here -->
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
